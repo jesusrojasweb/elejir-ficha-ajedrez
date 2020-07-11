@@ -1,0 +1,17 @@
+body{
+	font-family: system-ui;
+}
+.imagen{
+	display: none;
+	width: 500px;
+	height: 500px;
+}
+.imagen.active{
+	display: block;
+}
+img{
+	width: 100%;
+}
+.sinImagen{
+	display: none;
+}
