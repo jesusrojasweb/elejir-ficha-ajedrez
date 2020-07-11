@@ -1,17 +1,39 @@
 body{
 	font-family: system-ui;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+
 }
 .imagen{
-	display: none;
 	width: 500px;
-	height: 500px;
-}
-.imagen.active{
-	display: block;
+	height: auto;
 }
 img{
 	width: 100%;
 }
 .sinImagen{
 	display: none;
+}
+
+.btn{
+	background: black;
+	color: white;
+	font-family: system-ui;
+	padding: .5em 1em;
+	margin-top: 2em;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.2rem;
+}
+
+.btn:focus{
+	outline: none;
+}
+
+@media screen and (max-width: 500px) {
+	.imagen{
+		width: 100%;
+	}
 }

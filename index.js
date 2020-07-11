@@ -1,10 +1,12 @@
-const $imagenContainer = document.querySelector('.imagen')
 const $imagen = document.querySelector('.imagen img')
-
 const $button = document.getElementById('escojer')
 
-$button.addEventListener('click', ()=>{
-	$imagenContainer.classList.add('active')
+
+$imagen.addEventListener('click',elejir)
+$imagen.addEventListener('touch',elejir)
+$button.addEventListener('click', elejir)
+
+function elejir() {
 	let fichas = ['blanco.png', 'negro.png']
 	let contador = 0
 
@@ -24,11 +26,7 @@ $button.addEventListener('click', ()=>{
 		$imagen.src= fichas[elejido]
 		console.log(elejido)
 	},2000)
-
-	
-
-		
-})
+}
 
 function aleatorio(min,max) {
 	return Math.round(Math.random() * (max - min)) + min
