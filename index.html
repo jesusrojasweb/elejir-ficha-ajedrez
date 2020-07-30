@@ -4,17 +4,35 @@
 	<meta charset="UTF-8">
 	<title>Ajedrez</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="https://kit.fontawesome.com/406ee761ec.js" crossorigin="anonymous"></script>	
 </head>
 <body>
-	<h1>Preciona el boton para ver que ficha te tocara</h1>
-	<div class="imagen">
-		<img src="peones.jpg" alt="ajedrez">
-	</div>
-	<button id="escojer" class="btn">Vamos a ver</button>
-	<img src="blanco.png" alt=""class="sinImagen" >
-	<img src="negro.png" alt="" class="sinImagen">
-		
-	<script src="index.js"></script>
+	<nav class="menu">
+		<ul>
+			<li><a href="#"><span class="fas fa-home"></span></a></li>
+			<li><a href="#"><span class="fas fa-trophy"></span></a></li>
+			<!-- <li><a href="#"><span class="fas fa-chess-board"></span></a></li> -->
+		</ul>
+	</nav>
+	<!-- <div class="escoger">
+		<h1>Escoger Ficha</h1>
+		<div class="imagen">
+			<img src="peones.jpg" alt="ajedrez">
+		</div>
+		<button id="escojer" class="btn">Elegir</button>
+		<img src="tabla.png" alt=""class="sinImagen" >
+	</div> -->
+
+	<div id="featuring"></div>
+
+	<!-- <div class="torneo">
+
+	</div> -->
+
+	<script src="js/index.js"></script>
+	<script src="js/elegir.js"></script>
+	<script src="js/torneo.js"></script>
+
 </body>
 </html>
